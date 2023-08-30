@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: linear-gradient(rgb(94, 38, 38), rgb(64, 22, 112), rgb(110, 11, 41), rgb(107, 76, 20)); */
+    /* background-image: linear-gradient(rgba(199, 99, 245, 0.973), rgb(216, 147, 18), rgb(255, 93, 52)); */
+
+    background-image: linear-gradient(45deg, #800080 0%,
+            #E90207 46%,
+            #ff8c00 100%);
+
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.more {
+    display: none;
+}
+
+/* page loading style  */
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-center {
+    position: absolute;
+    /* top: 0; */
+    top: 50vh;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    /* width: 30px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
